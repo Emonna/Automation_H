@@ -1,8 +1,8 @@
 ﻿Feature: Login Action
-		 In order to have multiple tests I should have valid Credentials
-		 And should be able to login and logout from Goppa
+		 #In order to have multiple tests I should have valid Credentials
+		 #And should be able to login and logout from Goppa
 
-@BeforeallTest
+@mytag
 Scenario: Successful Login with Valid Credentials
 	Given User is on Goppa Home Page
 	When User Navigate to LogIn Page

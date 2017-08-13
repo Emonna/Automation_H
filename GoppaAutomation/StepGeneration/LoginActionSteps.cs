@@ -1,6 +1,7 @@
 ﻿using System;
 using TechTalk.SpecFlow;
 
+
 namespace GoppaAutomation
 {
     [Binding]
@@ -9,13 +10,15 @@ namespace GoppaAutomation
         [When(@"User Navigate to LogIn Page")]
         public void WhenUserNavigateToLogInPage()
         {
-            ScenarioContext.Current.Pending();
+            var Login = new StepGeneration.Utils.LoginTest();
+            Login.Test();
         }
         
         [When(@"User enters ""(.*)"" and ""(.*)""")]
         public void WhenUserEntersAnd(string p0, string p1)
         {
-            ScenarioContext.Current.Pending();
+            var Login = new StepGeneration.Utils.LoginTest();
+            Login.TestLogin();
         }
         
         [When(@"User LogOut from the Goppa")]
